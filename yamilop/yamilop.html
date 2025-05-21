@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>yamilop Scents</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #fff, #ffe4ec);
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffe4ec;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header img {
+      max-width: 70%;
+      height: auto;
+      border-radius: 15px;
+    }
+
+    .slogan {
+      font-size: 1.8em;
+      color: #d14792;
+      margin-top: 15px;
+    }
+
+    .separador {
+      background-color: #ffb6c1;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 1.5em;
+      font-weight: bold;
+      margin-top: 40px;
+      border-radius: 0 0 10px 10px;
+    }
+
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 30px 20px;
+    }
+
+    .producto {
+      width: 250px;
+      background-color: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .producto:hover {
+      transform: scale(1.03);
+    }
+
+    .producto img {
+      width: 100%;
+      border-radius: 10px;
+      border: 3px solid #ff69b4;
+      margin-bottom: 10px;
+    }
+
+    .producto p {
+      margin: 5px 0;
+    }
+
+    .producto button {
+      margin-top: 10px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .producto button:hover {
+      background-color: #d14792;
+    }
+
+    .carrito {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 250px;
+      background-color: #ffe4ec;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .carrito h2 {
+      margin-top: 0;
+    }
+
+    .carrito ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .carrito li {
+      font-size: 0.95em;
+      margin: 10px 0;
+    }
+
+    .carrito button {
+      width: 100%;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #fce4ec;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95em;
+      margin-top: 60px;
+    }
+
+    a {
+      color: #d14792;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="banner2.jpg" alt="Banner de Yamilop Scents">
+  <div class="slogan">¡Tu esencia, tu identidad!</div>
+</header>
+
+<div class="separador">LO MÁS VENDIDO</div>
+<div class="productos">
+  <div class="producto">
+    <img src="producto1.jpg" alt="Ariana Grande Cloud">
+    <p><strong>Ariana Grande Cloud</strong></p>
+    <p>Notas de lavanda, coco y vainilla. Dulce y envolvente.</p>
+    <p><strong>$1000</strong></p>
+    <button onclick="comprar('Ariana Grande Cloud', 1000)">Comprar</button>
+  </div>
+  <div class="producto">
+    <img src="producto2.jpg" alt="Nightsip">
+    <p><strong>Nightsip</strong></p>
+    <p>Violet petals & champagne. Misteriosa y elegante.</p>
+    <p><strong>$350</strong></p>
+    <button onclick="comprar('Nightsip', 350)">Comprar</button>
+  </div>
+</div>
+
+<div class="separador">PERFUMES</div>
+<div class="productos">
+  <div class="producto">
+    <img src="producto3.jpg" alt="MOSCHINO TOY2">
+    <p><strong>MOSCHINO TOY2</strong></p>
+    <p>Aroma floral fresco, con manzana verde y magnolia.</p>
+    <p><strong>$1000</strong></p>
+    <button onclick="comprar('MOSCHINO TOY2', 1000)">Comprar</button>
+  </div>
+  <div class="producto">
+    <img src="producto4.jpg" alt="Sweet Like Candy">
+    <p><strong>Sweet Like Candy</strong></p>
+    <p>Frutos rojos y crema batida. Dulce, juvenil y divertida.</p>
+    <p><strong>$900</strong></p>
+    <button onclick="comprar('Sweet Like Candy', 900)">Comprar</button>
+  </div>
+  <div class="producto">
+    <img src="producto5.jpg" alt="Thank U Next 2.0">
+    <p><strong>Thank U Next 2.0</strong></p>
+    <p>Coco, rosa silvestre y almizcle. Moderno y sofisticado.</p>
+    <p><strong>$850</strong></p>
+    <button onclick="comprar('Thank U Next 2.0', 850)">Comprar</button>
+  </div>
+</div>
+
+<div class="separador">BODY SPLASH</div>
+<div class="productos">
+  <div class="producto">
+    <img src="C:\Users\Yamileth\Desktop\yamilop-scents\img\apricot.jpg.jpeg" alt="Rich Honeysuckle Apricot">
+    <p><strong>Rich Honeysuckle Apricot</strong></p>
+    <p>Floral y afrutado, con albaricoque dulce.</p>
+    <p><strong>$350</strong></p>
+    <button onclick="comprar('Rich Honeysuckle Apricot', 350)">Comprar</button>
+  </div>
+  <div class="producto">
+    <img src="C:\Users\Yamileth\Desktop\yamilop-scents\img\pure-seduction.jpg.jpeg" alt="Pure Seduction">
+    <p><strong>Pure Seduction</strong></p>C:\Users\Yamileth\Desktop\yamilop-scents\img\apricot.jpg.jpeg
+    <p>Frutas rojas y fresia. Sensual y atractivo.</p>
+    <p><strong>$350</strong></p>
+    <button onclick="comprar('Pure Seduction', 350)">Comprar</button>
+  </div>
+</div>
+
+<div class="carrito">
+  <h2>Carrito</h2>
+  <ul id="carrito-lista"></ul>
+  <button onclick="finalizarCompra()">Finalizar compra</button>
+</div>
+
+<footer>
+  <p><strong>¿Dónde encontrarnos?</strong></p>
+  <p>Instagram: <a href="https://instagram.com/yamilop_scents" target="_blank">@yamilop_scents</a></p>
+  <p>WhatsApp: <a href="https://wa.me/5211234567890" target="_blank">+52 1 234 567 890</a></p>
+  <p>Email: contacto@yamilopscents.com</p>
+</footer>
+
+<script>
+let carrito = [];
+
+function comprar(producto, precio) {
+  carrito.push({ nombre: producto, precio: precio });
+  actualizarCarrito();
+}
+
+function actualizarCarrito() {
+  const lista = document.getElementById('carrito-lista');
+  lista.innerHTML = '';
+  carrito.forEach((item, index) => {
+    const li = document.createElement('li');
+    li.textContent = `${item.nombre} - $${item.precio}`;
+    const btn = document.createElement('button');
+    btn.textContent = 'Eliminar';
+    btn.style.marginLeft = '10px';
+    btn.onclick = () => eliminarProducto(index);
+    li.appendChild(btn);
+    lista.appendChild(li);
+  });
+}
+
+function eliminarProducto(index) {
+  carrito.splice(index, 1);
+  actualizarCarrito();
+}
+
+function finalizarCompra() {
+  alert('¡Gracias por tu compra!');
+  carrito = [];
+  actualizarCarrito();
+}
+</script>
+
+</body>
+</html>
+
+

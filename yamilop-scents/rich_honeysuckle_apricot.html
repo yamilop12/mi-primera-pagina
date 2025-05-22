@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Rich Honeysuckle Apricot</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #fff, #ffe4ec);
+      padding: 30px;
+      text-align: center;
+      color: #333;
+    }
+
+    img {
+      width: 300px;
+      border-radius: 15px;
+      border: 3px solid #ff69b4;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: #d14792;
+    }
+
+    .precio {
+      font-size: 1.3em;
+      color: #444;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+      margin: 10px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #d14792;
+    }
+
+    .descripcion {
+      max-width: 500px;
+      margin: 0 auto 30px;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Rich Honeysuckle Apricot</h1>
+  <img src="producto6.jpg" alt="Rich Honeysuckle Apricot">
+  <p class="descripcion"><strong>Descripción:</strong> Floral y afrutado, con albaricoque dulce.</p>
+  <p><strong>Mililitros:</strong> 250 ml</p>
+  <p class="precio"><strong>$350</strong></p>
+
+  <button onclick="comprar()">Comprar</button>
+  <button onclick="window.location.href='yamilop.html'">Volver a ir a ver los productos</button>
+
+  <script>
+    function comprar() {
+      const producto = {
+        nombre: 'Rich Honeysuckle Apricot',
+        precio: 350
+      };
+
+      let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+      carrito.push(producto);
+      localStorage.setItem('carrito', JSON.stringify(carrito));
+
+      alert("Has añadido 'Rich Honeysuckle Apricot' al carrito.");
+    }
+  </script>
+
+</body>
+</html>

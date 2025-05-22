@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>yamilop Scents</title>
+  <title>Yamilop Scents</title>
   <style>
     body {
       margin: 0;
@@ -146,123 +146,118 @@
   </style>
 </head>
 <body>
-<header>
-  <img src="banner2.jpg" alt="Banner de Yamilop Scents">
-  <div class="slogan">¡Tu esencia, tu identidad!</div>
-</header>
+  <header>
+    <img src="banner2.jpg" alt="Banner de Yamilop Scents">
+    <div class="slogan">¡Tu esencia, tu identidad!</div>
+  </header>
 
-<div class="separador">LO MÁS VENDIDO</div>
-<div class="productos">
-  <div class="producto">
-    <img src="producto1.jpg" alt="Ariana Grande Cloud">
-    <p><strong>Ariana Grande Cloud</strong></p>
-    <p>Notas de lavanda, coco y vainilla. Dulce y envolvente.</p>
-    <p><strong>$1000</strong></p>
-    <button onclick="comprar('Ariana Grande Cloud', 1000)">Comprar</button>
+  <div class="separador">LO MÁS VENDIDO</div>
+  <div class="productos">
+    <div class="producto">
+      <img src="producto1.jpg" alt="Ariana Grande Cloud">
+      <p><strong>Ariana Grande Cloud</strong></p>
+      <p></p>
+      <p><strong>$1000</strong></p>
+      <button onclick="window.open('ariana_grande_cloud.html', '_blank')">Ver</button>
+    </div>
+    <div class="producto">
+      <img src="producto2.jpg" alt="Nightsip">
+      <p><strong>Nightsip</strong></p>
+      <p></p>
+      <p><strong>$350</strong></p>
+      <button onclick="window.open('nightsip.html', '_blank')">Ver</button>
+    </div>
   </div>
-  <div class="producto">
-    <img src="producto2.jpg" alt="Nightsip">
-    <p><strong>Nightsip</strong></p>
-    <p>Violet petals & champagne. Misteriosa y elegante.</p>
-    <p><strong>$350</strong></p>
-    <button onclick="comprar('Nightsip', 350)">Comprar</button>
+
+  <div class="separador">PERFUMES</div>
+  <div class="productos">
+    <div class="producto">
+      <img src="producto3.jpg" alt="MOSCHINO TOY2">
+      <p><strong>MOSCHINO TOY2</strong></p>
+      <p></p>
+      <p><strong>$1000</strong></p>
+      <button onclick="window.open('moschino_toy2.html', '_blank')">Ver</button>
+    </div>
+    <div class="producto">
+      <img src="producto4.jpg" alt="Sweet Like Candy">
+      <p><strong>Sweet Like Candy</strong></p>
+      <p></p>
+      <p><strong>$900</strong></p>
+      <button onclick="window.open('sweet_like_candy.html', '_blank')">Ver</button>
+    </div>
+    <div class="producto">
+      <img src="producto5.jpg" alt="Thank U Next 2.0">
+      <p><strong>Thank U Next 2.0</strong></p>
+      <p></p>
+      <p><strong>$850</strong></p>
+      <button onclick="window.open('thank_u_next_2_0.html', '_blank')">Ver</button>
+    </div>
   </div>
-</div>
 
-<div class="separador">PERFUMES</div>
-<div class="productos">
-  <div class="producto">
-    <img src="producto3.jpg" alt="MOSCHINO TOY2">
-    <p><strong>MOSCHINO TOY2</strong></p>
-    <p>Aroma floral fresco, con manzana verde y magnolia.</p>
-    <p><strong>$1000</strong></p>
-    <button onclick="comprar('MOSCHINO TOY2', 1000)">Comprar</button>
+  <div class="separador">BODY SPLASH</div>
+  <div class="productos">
+    <div class="producto">
+      <img src="producto6.jpg" alt="Rich Honeysuckle Apricot">
+      <p><strong>Rich Honeysuckle Apricot</strong></p>
+      <p></p>
+      <p><strong>$350</strong></p>
+      <button onclick="window.open('rich_honeysuckle_apricot.html', '_blank')">Ver</button>
+    </div>
+    <div class="producto">
+      <img src="producto7.jpg" alt="Pure Seduction">
+      <p><strong>Pure Seduction</strong></p>
+      <p></p>
+      <p><strong>$350</strong></p>
+      <button onclick="window.open('pure_seduction.html', '_blank')">Ver</button>
+    </div>
   </div>
-  <div class="producto">
-    <img src="producto4.jpg" alt="Sweet Like Candy">
-    <p><strong>Sweet Like Candy</strong></p>
-    <p>Frutos rojos y crema batida. Dulce, juvenil y divertida.</p>
-    <p><strong>$900</strong></p>
-    <button onclick="comprar('Sweet Like Candy', 900)">Comprar</button>
+
+  <div class="carrito">
+    <h2>Carrito</h2>
+    <ul id="carrito-lista"></ul>
+    <button onclick="finalizarCompra()">Finalizar compra</button>
   </div>
-  <div class="producto">
-    <img src="producto5.jpg" alt="Thank U Next 2.0">
-    <p><strong>Thank U Next 2.0</strong></p>
-    <p>Coco, rosa silvestre y almizcle. Moderno y sofisticado.</p>
-    <p><strong>$850</strong></p>
-    <button onclick="comprar('Thank U Next 2.0', 850)">Comprar</button>
-  </div>
-</div>
 
-<div class="separador">BODY SPLASH</div>
-<div class="productos">
-  <div class="producto">
-    <img src="producto6.jpg" alt="Rich Honeysuckle Apricot">
-    <p><strong>Rich Honeysuckle Apricot</strong></p>
-    <p>Floral y afrutado, con albaricoque dulce.</p>
-    <p><strong>$350</strong></p>
-    <button onclick="comprar('Rich Honeysuckle Apricot', 350)">Comprar</button>
-  </div>
-  <div class="producto">
-    <img src="producto7.jpg" alt="Pure Seduction">
-    <p><strong>Pure Seduction</strong></p>
-    <p>Frutas rojas y fresia. Sensual y atractivo.</p>
-    <p><strong>$350</strong></p>
-    <button onclick="comprar('Pure Seduction', 350)">Comprar</button>
-  </div>
-</div>
+  <footer>
+    <p><strong>¿Dónde encontrarnos?</strong></p>
+    <p>Instagram: <a href="https://instagram.com/yamilop_scents" target="_blank">@yamilop_scents</a></p>
+    <p>WhatsApp: <a href="https://wa.me/5211234567890" target="_blank">+52 1 234 567 890</a></p>
+    <p>Email: contacto@yamilopscents.com</p>
+  </footer>
 
-<div class="carrito">
-  <h2>Carrito</h2>
-  <ul id="carrito-lista"></ul>
-  <button onclick="finalizarCompra()">Finalizar compra</button>
-</div>
+  <script>
+  let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
-<footer>
-  <p><strong>¿Dónde encontrarnos?</strong></p>
-  <p>Instagram: <a href="https://instagram.com/yamilop_scents" target="_blank">@yamilop_scents</a></p>
-  <p>WhatsApp: <a href="https://wa.me/5211234567890" target="_blank">+52 1 234 567 890</a></p>
-  <p>Email: contacto@yamilopscents.com</p>
-</footer>
+  function actualizarCarrito() {
+    const lista = document.getElementById('carrito-lista');
+    lista.innerHTML = '';
+    carrito.forEach((item, index) => {
+      const li = document.createElement('li');
+      li.textContent = `${item.nombre} - $${item.precio}`;
+      const btn = document.createElement('button');
+      btn.textContent = 'Eliminar';
+      btn.style.marginLeft = '10px';
+      btn.onclick = () => eliminarProducto(index);
+      li.appendChild(btn);
+      lista.appendChild(li);
+    });
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+  }
 
-<script>
-let carrito = [];
+  function eliminarProducto(index) {
+    carrito.splice(index, 1);
+    actualizarCarrito();
+  }
 
-function comprar(producto, precio) {
-  carrito.push({ nombre: producto, precio: precio });
-  actualizarCarrito();
-}
+  function finalizarCompra() {
+    alert('¡Gracias por tu compra!');
+    carrito = [];
+    actualizarCarrito();
+    localStorage.removeItem('carrito');
+  }
 
-function actualizarCarrito() {
-  const lista = document.getElementById('carrito-lista');
-  lista.innerHTML = '';
-  carrito.forEach((item, index) => {
-    const li = document.createElement('li');
-    li.textContent = `${item.nombre} - $${item.precio}`;
-    const btn = document.createElement('button');
-    btn.textContent = 'Eliminar';
-    btn.style.marginLeft = '10px';
-    btn.onclick = () => eliminarProducto(index);
-    li.appendChild(btn);
-    lista.appendChild(li);
-  });
-}
-
-function eliminarProducto(index) {
-  carrito.splice(index, 1);
-  actualizarCarrito();
-}
-
-function finalizarCompra() {
-  alert('¡Gracias por tu compra!');
-  carrito = [];
-  actualizarCarrito();
-}
+  actualizarCarrito(); // Mostrar productos al cargar la página
 </script>
 
 </body>
 </html>
-
-
-
-

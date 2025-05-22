@@ -1,145 +1,180 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Inicio - Yamilop Scents</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inicio - Yamilop Scents</title>
 
-    <style>
-        body {
-            background-color: #f8f8f8;
-            font-family: 'Quicksand', sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
+  <!-- Fuente mejorada -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-        .banner {
-            width: 50%;
-            max-width: 500px;
-            margin-top: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #fff0f5, #ffe4ec);
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      animation: fadeIn 1.2s ease-in-out;
+    }
 
-        .mensaje {
-            font-size: 1.6em;
-            color: #333;
-            margin-top: 30px;
-            font-weight: 700;
-        }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-        .submensaje {
-            font-size: 1.2em;
-            color: #555;
-            margin-bottom: 30px;
-        }
+    .banner {
+      width: 650px;
+      height: auto;
+      display: block;
+      margin: 40px auto 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 18px rgba(255, 105, 180, 0.2);
+      transition: transform 0.3s ease;
+    }
 
-        form {
-            background-color: #fff0f5;
-            padding: 30px 20px;
-            margin: 20px auto;
-            border-radius: 15px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            max-width: 400px;
-        }
+    .banner:hover {
+      transform: scale(1.05);
+    }
 
-        input {
-            width: 85%;
-            padding: 12px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            font-size: 1em;
-        }
+    .mensaje {
+      font-size: 1.8em;
+      color: #cc3366;
+      margin-top: 20px;
+      font-weight: 700;
+      text-shadow: 0 1px 1px rgba(255, 255, 255, 0.4);
+    }
 
-        button[type="submit"] {
-            background-color: #FF69B4;
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-size: 1.1em;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
+    .submensaje {
+      font-size: 1.2em;
+      color: #555;
+      margin-bottom: 30px;
+    }
 
-        button[type="submit"]:hover {
-            background-color: #d14792;
-            transform: scale(1.05);
-        }
+    form {
+      background: linear-gradient(to right, #ffe6f0, #fff0f5);
+      padding: 30px 20px;
+      margin: 20px auto;
+      border-radius: 15px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      animation: fadeIn 1.5s ease;
+    }
 
-        .boton-inicio {
-            padding: 12px 25px;
-            background-color: #FFB6C1;
-            color: white;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            font-size: 1.2em;
-            transition: background-color 0.3s, transform 0.3s;
-        }
+    input {
+      width: 85%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+      transition: border-color 0.3s, box-shadow 0.3s;
+    }
 
-        .boton-inicio:hover {
-            background-color: #FF69B4;
-            transform: scale(1.05);
-        }
+    input:focus {
+      border-color: #FF69B4;
+      box-shadow: 0 0 8px rgba(255, 105, 180, 0.3);
+      outline: none;
+    }
 
-        #boton-tienda {
-            display: none;
-            margin-top: 25px;
-        }
+    button[type="submit"] {
+      background: linear-gradient(to right, #FF69B4, #FF1493);
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.1em;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s;
+    }
 
-        /* Responsive */
-        @media screen and (max-width: 600px) {
-            .mensaje {
-                font-size: 1.3em;
-            }
-            form {
-                padding: 20px;
-                max-width: 90%;
-            }
-            input {
-                font-size: 1em;
-            }
-        }
-    </style>
+    button[type="submit"]:hover {
+      background: linear-gradient(to right, #d14792, #c2185b);
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(255, 105, 180, 0.4);
+    }
+
+    .boton-inicio {
+      padding: 12px 25px;
+      background: linear-gradient(to right, #FFB6C1, #FF69B4);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1.2em;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    }
+
+    .boton-inicio:hover {
+      background: linear-gradient(to right, #FF69B4, #FF1493);
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(255, 105, 180, 0.4);
+    }
+
+    #boton-tienda {
+      display: none;
+      margin-top: 25px;
+      animation: fadeIn 1s ease;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 600px) {
+      .mensaje {
+        font-size: 1.4em;
+      }
+      form {
+        padding: 20px;
+        max-width: 90%;
+      }
+      input {
+        font-size: 1em;
+      }
+      .banner {
+        width: 140px;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <img  src="banner1.jpg"alt="Banner de Yamilop Scents">
+  <!-- Imagen con clase aplicada -->
+  <img src="banner1.jpg" alt="Banner de Yamilop Scents" class="banner">
 
-    <div class="mensaje">Recuerda que el perfume es tu esencia</div>
-    <div class="submensaje">Regístrate para acceder a nuestros productos exclusivos</div>
+  <div class="mensaje">Recuerda que el perfume es tu esencia</div>
+  <div class="submensaje">Regístrate para acceder a nuestros productos exclusivos</div>
 
-    <!-- Formulario -->
-    <form onsubmit="registrarUsuario(event)">
-        <input type="text" id="nombre" placeholder="Tu nombre" required><br>
-        <input type="email" id="correo" placeholder="Correo electrónico" required><br>
-        <input type="password" id="clave" placeholder="Contraseña" required><br>
-        <button type="submit">Registrarse</button>
-    </form>
+  <!-- Formulario -->
+  <form onsubmit="registrarUsuario(event)">
+    <input type="text" id="nombre" placeholder="Tu nombre" required><br>
+    <input type="email" id="correo" placeholder="Correo electrónico" required><br>
+    <input type="password" id="clave" placeholder="Contraseña" required><br>
+    <button type="submit">Registrarse</button>
+  </form>
 
-    <!-- Botón que aparece después -->
-    <div id="boton-tienda">
-        <p>¡Gracias por registrarte!</p>
-        <button class="boton-inicio" onclick="window.location.href='yamilop.html'">Ir a la tienda</button>
-    </div>
+  <!-- Botón que aparece después -->
+  <div id="boton-tienda">
+    <p>¡Gracias por registrarte!</p>
+    <button class="boton-inicio" onclick="window.location.href='yamilop.html'">Ir a la tienda</button>
+  </div>
 
-    <script>
-        function registrarUsuario(event) {
-            event.preventDefault();
-            const nombre = document.getElementById("nombre").value;
-            alert(`¡Bienvenida, ${nombre}! Gracias por registrarte en Yamilop Scents.`);
-            document.querySelector("form").style.display = "none";
-            document.getElementById("boton-tienda").style.display = "block";
-        }
-    </script>
+  <script>
+    function registrarUsuario(event) {
+      event.preventDefault();
+      const nombre = document.getElementById("nombre").value;
+      alert(`¡Bienvenida, ${nombre}! Gracias por registrarte en Yamilop Scents.`);
+      document.querySelector("form").style.display = "none";
+      document.getElementById("boton-tienda").style.display = "block";
+    }
+  </script>
 
 </body>
 </html>
 
-
-
-
- 
